@@ -6,7 +6,7 @@ Online: https://arjen-geluk.github.io/
 
 ## Rubrieken
 
-- **Zeilen & navigatie** → [navigation](https://github.com/Arjen-Geluk/navigation) ([site](https://arjen-geluk.github.io/navigation/)): getijkaart Waddenzee, wedstrijdberekeningen (Klipperrace 3 Steden)
+- **Zeilen & navigatie** → [navigation](https://github.com/Arjen-Geluk/navigation) ([site](https://arjen-geluk.github.io/navigation/)): polartool, wedstrijdberekeningen IJsselmeergebied, getijkaart Waddenzee
 - **Brommer-reizen** — volgt
 - **Techniek & industrie** — volgt
 - **Software & scripts** — volgt

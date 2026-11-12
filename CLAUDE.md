@@ -21,9 +21,10 @@ en het leidende document voor de structuur van al zijn repo's.
 
 Vast houden aan deze vier categorieën (sectie-titels in `index.html`):
 Zeilen & navigatie, Brommer-reizen, Techniek & industrie, Software & scripts.
-Een categorie zonder projecten krijgt een `<div class="placeholder">` i.p.v.
-een kaart. Zodra een topic-repo een werkende GitHub Pages-site heeft, komt
-er een `<a class="card">` met link naar die site.
+Elke categorie is een `<section class="paneel">` met een `h2`. Een categorie
+zonder projecten krijgt een `<div class="leeg">` i.p.v. een kaart. Zodra een
+topic-repo een werkende GitHub Pages-site heeft, komt er een `<a class="kaart">`
+met link naar die site.
 
 ## Licentie
 
@@ -44,10 +45,27 @@ overleg.
 - Permanent verwijderen van een repo doet Arjen altijd zelf (Settings →
   Danger Zone); dat voert Claude nooit automatisch uit.
 
-## Stijl landingspagina's
+## Huisstijl (design system Navigation)
 
-Donker thema, minimalistische kaarten-grid (zie `index.html` in deze repo
-en in Navigation als voorbeeld), Nederlandstalige teksten.
+Alle pagina's in alle repo's volgen één huisstijl: het design system **Navigation**,
+https://claude.ai/artifact/6F27EjgQKsX2xBuRW7kX1i. Lees daar eerst `project/README.md`
+(Artifact-tool, `read` met `path`), en voor waarden `project/tokens.json` en
+`project/components/bundle.css`.
+
+- Tokens (`bg`, `panel`, `ink`, `muted`, `line`, `navy`, `accent`, …) in een licht en een donker thema;
+  donker volgt `prefers-color-scheme`. Componenten: Kopbalk, Paneel, Knop, Chip, Melding, Veld,
+  Lijsttabel, Polartabel.
+- Landingspagina's (deze en die van elke topic-repo): navy kopbalk met ankerring en de naam in
+  hoofdletters, daaronder panelen met kaarten. `index.html` in deze repo en in Navigation zijn het
+  voorbeeld. Nederlandstalige teksten.
+- Elke pagina heeft in de kopbalk een terugknop (`<a class="terug">`) naar de pagina één niveau
+  hoger: een project naar de landingspagina van zijn topic-repo (`href="../"`), een topic-landingspagina
+  naar deze portfoliosite (`https://arjen-geluk.github.io/`, "← Arjen Geluk"). Alleen deze
+  portfoliopagina zelf heeft er geen.
+- Waarden worden inline in de pagina gezet, niet geladen uit het design system.
+- Een nieuwe topic-repo krijgt in zijn `CLAUDE.md` een sectie "Huisstijl (design system)" met deze
+  link en afspraken (zie `CLAUDE.md` van Navigation), en zet zijn landingspagina eerst in de huisstijl.
+- Komt er een nieuwe kleur of een nieuw component bij: werk dan ook het design system bij.
 
 ## Favicon
 
